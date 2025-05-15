@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Banking System - Home</title>
+</head>
+<body>
+    <h1>Welcome to the Banking System</h1>
+    <form action="#" th:action="@{/cart/{userId}(userId=${#numbers.parseInteger(userId)})}" method="get">
+        <label for="userId">Enter User ID:</label>
+        <input type="number" id="userId" name="userId" required>
+        <button type="submit">View Cart</button>
+    </form>
+</body>
+</html>
